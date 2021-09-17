@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Apps kalkulator</title>
+</head>
+<body>
+	<br />
+	<form action="" method="POST">
+		<input type="number" name="first_TextBox_Value" id="number1_TextBox">
+		<input type="checkbox" name="pilih">
+		<div>&nbsp;</div>
+		<input type="number" name="second_TextBox_Value" id="number2_TextBox">
+		<input type="checkbox" name="pilih">
+		<div>&nbsp;</div>
+		<input type="number" name="third_TextBox_Value" id="number3_TextBox">
+		<input type="checkbox" name="pilih">
+		<div>&nbsp;</div>
+
+		<hr color="black">
+
+		<table cellpadding="8" cellspacing="8" width="100%" style="text-align: center;" border="0">
+			<tr>
+				<td><input type="checkbox" name="math_Operators" onclick="reset_Operators();" /> <label
+						style="color:rgb(0, 0, 0); font-size: 30px;"> + </label></td>
+				<td><input type="checkbox" name="math_Operators" onclick="reset_Operators();" /> <label
+						style="color:rgb(0, 0, 0); font-size: 30px;"> - </label></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="math_Operators" onclick="reset_Operators();" /> <label
+						style="color:rgb(0, 0, 0); font-size: 30px;"> &times; </label></td>
+				<td><input type="checkbox" name="math_Operators" onclick="reset_Operators();" /> <label
+						style="color:rgb(0, 0, 0); font-size: 30px;"> &#247 </label></td>
+			</tr>
+		</table>
+		<br />
+		<div style="text-align:center;">
+			<input type="submit" value="Result" style="background-color: rgb(19, 164, 201);"
+				onclick="return result();" />
+			<input type="submit" value="Clear" style="background-color: rgb(184, 27, 105);" onclick="return clear();" />
+		</div>
+		<br />
+		<div id="math_Results"></div>
+	</form>
+
+	<footer style="text-align: center;">
+		<hr>
+		<p>Copyright &copy; 2021 Test Frontend</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
